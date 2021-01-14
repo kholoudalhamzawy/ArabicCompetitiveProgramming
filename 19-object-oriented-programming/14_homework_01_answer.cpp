@@ -2,7 +2,7 @@
 using namespace std;
 
 vector<int> operator +(const vector<int> &c1, const vector<int> &c2) {
-	if(c1.size() > c2.size())
+	if(c1.size() > c2.size())     //this is just to recurse the function to get the smaller vector first.
 		return c2 + c1;
 
 	vector<int> c = c2;
