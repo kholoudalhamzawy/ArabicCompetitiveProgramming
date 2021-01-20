@@ -102,7 +102,7 @@ public:
 				<< " - radius " << radius << "\n";
 	}
 	virtual Shape* Clone() const {
-		return new Circle(*this);
+		return new Circle(*this);   //copy constructer creathing an object from this
 	}
 };
 
